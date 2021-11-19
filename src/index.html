@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <title>Currency Exchanger</title>
 </head>
 <body>
   <div class="container">
-    <p>Hello World!</p>
+    <div id="header">
+      <h1>Currency Exchanger Greeting</h1>
+      <p>Welcome to the currency exchanger, use the inputs to get x-changin!</p>
+    </div>
+    <form id="currency-exchange">
+      <div class="form-group">
+        <label for="cash-i-have">What currency are you x-changin? <input list="currencies" id="cash-i-have" class="form-control"></label>
+        <label for="cash-i-want">What currency would you like? <input list="currencies" id="cash-i-want" class="form-control"></label>
+        <datalist id="currencies">
+          <option value="AED">UAE Dirham - United Arab Emirates</option>
+          <option value="AFN">Afghan Afghani - Afghanistan</option>
+          <option value="ALL">Albanian Lek - Albania</option>
+          <option value="AMD">Armenian Dram - Armenia</option>
+          <option value="ANG">Netherlands Antillian Guilder - Netherlands Antilles</option>
+          <option value="AOA">Angolan Kwanza - Angola</option>
+          <option value="ARS">Argentine Peso - Argentina</option>
+          <option value="AUD">Australian Dollar - Australia</option>
+          <option value="AWG">Aruban Florin - Aruba</option>
+          <option value="AZN">Azerbaijani Manat - Azerbaijan</option>
+          <option value="BAM">Bosnia and Herzegovina Mark - Bosnia and Herzegovina</option>
+          <option value="BBD">Barbados Dollar - Barbados</option>
+          <option value="BDT">Bangladeshi Taka - Bangladesh</option>
+          <option value="BGN">Bulgarian Lev - Bulgaria</option>
+          <option value="BHD">Bahraini Dinar - Bahrain</option>
+          <option value="BIF">Burundian Franc - Burundi</option>
+          <option value="BMD">Bermudian Dollar - Bermuda</option>
+          <option value="BND">Brunei Dollar - Brunei</option>
+          <option value="BOB">Bolivian Boliviano - Bolivia</option>
+          <option value="BRL">Brazilian Real - Brazil</option>
+          <option value="BSD">Bahamian Dollar - Bahamas</option>
+          <option value="BTN">Bhutanese Ngultrum - Bhutan</option>
+          <option value="BWP">Botswana Pula - Botswana</option>
+          <option value="BYN">Belarusian Ruble - Belarus</option>
+          <option value="BZD">Belize Dollar - Belize</option>
+          <option value="CAD">Canadian Dollar - Canada</option>
+          <option value="CDF">Congolese Franc - Democratic Republic of the Congo</option>
+          <option value="CHF">Swiss Franc - Switzerland</option>
+          <option value="CLP">Chilean Peso - Chile</option>
+          <option value="CNY">Chinese Renminbi - China</option>
+          <option value="COP">Colombian Peso - Colombia</option>
+          <option value="CRC">Costa Rican Colon - Costa Rica</option>
+          <option value="CUC">Cuban Convertible Peso - Cuba</option>
+          <option value="CUP">Cuban Peso - Cuba</option>
+          <option value="CVE">Cape Verdean Escudo - Cape Verde</option>
+          <option value="CZK">Czech Koruna - Czech Republic</option>
+
+        </datalist>
+      </div>
+    </form>
   </div>
 </body>
 </html>
