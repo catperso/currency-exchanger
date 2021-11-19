@@ -175,8 +175,26 @@
           <option value="ZAR">South African Rand - South Africa</option>
           <option value="ZMW">Zambian Kwacha - Zambia</option>
         </datalist>
+        <label for="amount">How much are you x-changin? <input type="number" class="form-control" id="amount" step="0.01" min="0"></label>
+        <button class="btn btn-success" type="submit" id="submit">Convert!</button>
       </div>
     </form>
+    <hr>
+    <div id="show-errors"></div>
+    <div class="row" id="output-zone">
+      <div class="col-5">
+        <h1 id="initial-currency"></h1>
+        <h2 id="initial-amount"></h2>
+      </div>
+      <div class="col-2">
+        <img>
+        <h3 id="conversion-rate"></h3>
+      </div>
+      <div class="col-5">
+        <h1 id="resultant-currency"></h1>
+        <h2 id="resultant-amount"></h2>
+      </div>
+    </div>
   </div>
 </body>
 </html>
