@@ -6,16 +6,20 @@
 <body>
   <div class="container">
     <div id="header">
-      <h1>Currency Exchanger Greeting</h1>
-      <p>Welcome to the currency exchanger, use the inputs to get x-changin!</p>
+      <h1>Currency X-Change</h1>
+      <h3>Welcome to this currency exchange calculator!</h3>
+      <p class="subtle-header">Please fill out the form below to find out what you're worth</p>
     </div>
+    <br>
     <form id="currency-exchange">
       <div class="row">
-        <div class="col-4">
-        <label for="cash-i-have">What currency are you x-changin? <input list="currencies" id="cash-i-have" class="form-control" placeholder="Please choose..." required></label>
+        <div class="col-3">
+        <label for="cash-i-have">What do you have?</label>
+        <input list="currencies" id="cash-i-have" class="form-control" placeholder="Starting currency..." required>
         </div>
-        <div class="col-4">
-        <label for="cash-i-want">What currency would you like? <input list="currencies" id="cash-i-want" class="form-control" placeholder="Please choose..." required></label>
+        <div class="col-3">
+        <label for="cash-i-want">What would you like?</label>
+        <input list="currencies" id="cash-i-want" class="form-control" placeholder="Converting to..." required>
         </div>
         <datalist id="currencies">
           <option value="AED">UAE Dirham - United Arab Emirates</option>
@@ -179,12 +183,14 @@
           <option value="ZAR">South African Rand - South Africa</option>
           <option value="ZMW">Zambian Kwacha - Zambia</option>
         </datalist>
-        <div class="col-4">
-        <label for="amount">How much are you x-changin? <input type="number" class="form-control" id="amount" step="0.01" min="0"></label>
+        <div class="col-3">
+        <label for="amount">How much do you have?</label>
+        <input type="number" class="form-control" id="amount" step="0.01" min="0" placeholder="0.00">
+        </div>
+        <div class="col-3">
+          <button class="btn btn-success" type="submit" id="submit">CONVERT!</button>
         </div>
       </div>
-      <br>
-      <button class="btn btn-success" type="submit" id="submit">CONVERT!</button>
     </form>
     <hr>
     <div id="show-errors"></div>

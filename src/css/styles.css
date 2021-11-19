@@ -1,13 +1,41 @@
+@font-face {
+  font-family: cashMoneyFont;
+  src: url("../assets/font/One_dance.ttf");
+  }
+
 body {
   background-color: aliceblue;
 }
 
 #header {
   text-align: center;
+  background-image: url("../assets/img/benji.jpg");
+  background-size: 100% 100%;
+  border: rgb(1, 95, 1) solid 9px;
+  color: rgb(174, 224, 174);
+}
+
+#header:hover {
+  animation:slidebg 100s linear infinite;
+}
+
+#header h1 {
+  font-weight: normal;
+  font-family: cashMoneyFont;
+}
+
+.subtle-header {
+  font-family: serif;
+  font-style: italic;
+  color: rgb(172, 172, 172);
+}
+
+label {
+  margin-bottom: 15px;
 }
 
 .btn {
-  left: 50%;
+  left: 35%;
   position: relative;
   background-image: url('../assets/img/cash.jpg');
   height: 100px;
@@ -17,11 +45,11 @@ body {
 }
 
 .btn:hover {
-  animation:slidebg 3s linear infinite;
+  animation:slidebg 1000s linear infinite;
 }
 
 @keyframes slidebg {
   to {
-    background-position:30vw;
+    background-position: 10000vw;
   }
 }

@@ -25,7 +25,7 @@ function displayExchangeStats(response, startingCash) {
 
 function displayErrors(error) {
   let errorOutput = [];
-  errorOutput.push("API Error ");
+  errorOutput.push("<p class='error-message'>API Error ");
   if (parseInt(error) === 400) {
     errorOutput.push(`<${error}: bad request> - malformed currency code, please use a valid code! (ex: USD, EUR, etc)`);
   } else if (parseInt(error) === 404) {
@@ -35,7 +35,8 @@ function displayErrors(error) {
   } else {
     errorOutput.push(`<${error}> - something went wrong!`);
   }
-  $('#show-errors').text(errorOutput.join(''));
+  errorOutput.push('</p>');
+  $('#show-errors').html(errorOutput.join(''));
 }
 
 $(document).ready(function() {
