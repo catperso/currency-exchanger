@@ -24,7 +24,18 @@ function displayExchangeStats(response, startingCash) {
 }
 
 function displayErrors(error) {
-  $('#show-errors').text(`${error}`);
+  let errorOutput = [];
+  errorOutput.push("API Error ");
+  if (parseInt(error) === 400) {
+    errorOutput.push(`<${error}: bad request> - malformed currency code, please use a valid code! (ex: USD, EUR, etc)`);
+  } else if (parseInt(error) === 404) {
+    errorOutput.push(`<${error}: not found> - unsupported currency code(s), please use one of the codes from the menus!`);
+  } else if (parseInt(error) === 403) {
+    errorOutput.push(`<${error}: forbidden> - invalid key, please make sure your API key is valid!`);
+  } else {
+    errorOutput.push(`<${error}> - something went wrong!`);
+  }
+  $('#show-errors').text(errorOutput.join(''));
 }
 
 $(document).ready(function() {
@@ -37,13 +48,12 @@ $(document).ready(function() {
     ExchangeService.getExchanged(cashFrom, cashTo, amount)
       .then(function(exchangeResponse) {
         if (exchangeResponse instanceof Error) {
-          //throw Error(`ExchangeRate API error: ${exchangeResponse.message}`);
-          throw Error(exchangeResponse);
+          throw Error(exchangeResponse.message);
         }
         displayExchangeStats(exchangeResponse, amount);
       })
       .catch(function(error) {
-        displayErrors(error['error-type']);
+        displayErrors(error.message);
       });
   });
 });
