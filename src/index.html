@@ -194,18 +194,26 @@
     </form>
     <hr>
     <div id="show-errors"></div>
-    <div class="row" id="output-zone">
+    <div class="row">
       <div class="col-5">
-        <h1 id="initial-currency"></h1>
-        <h2 id="initial-amount"></h2>
+        <div class="card output-card">
+          <h1 class="card-title" id="initial-currency"></h1>
+          <h2 class="card-body" id="initial-amount"></h2>
+        </div>
       </div>
       <div class="col-2">
-        <img>
-        <h3 id="conversion-rate"></h3>
+        <div class="conversion-zone">
+          <img src="assets/img/the-arrow.png" alt="An arrow pointing to the right" id="arrow-img">
+          <h2 id="conversion-text">&Delta; Rate</h2>
+          <hr>
+          <h3 id="conversion-rate"></h3>
+        </div>
       </div>
       <div class="col-5">
-        <h1 id="resultant-currency"></h1>
-        <h2 id="resultant-amount"></h2>
+        <div class="card output-card">
+          <h1 class="card-title" id="resultant-currency"></h1>
+          <h2 class="card-body" id="resultant-amount"></h2>
+        </div>
       </div>
     </div>
   </div>

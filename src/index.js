@@ -8,7 +8,9 @@ function clearFields() {
   $('#cash-i-want').val("");
   $('#cash-i-have').val("");
   $('#amount').val("");
-  $('#show-errors').text("");
+  $('#show-errors').html("");
+  $('.output-card').hide();
+  $('.conversion-zone').hide();
 }
 
 function displayExchangeStats(response, startingCash) {
@@ -21,6 +23,8 @@ function displayExchangeStats(response, startingCash) {
   $('#conversion-rate').text(exchangeRate);
   $('#resultant-currency').text(endingCurrency);
   $('#resultant-amount').text(endingCash);
+  $('.output-card').slideDown();
+  $('.conversion-zone').fadeIn();
 }
 
 function displayErrors(error) {

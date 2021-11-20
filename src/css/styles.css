@@ -4,7 +4,7 @@
   }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(176, 206, 180);
 }
 
 #header {
@@ -52,4 +52,40 @@ label {
   to {
     background-position: 10000vw;
   }
+}
+
+.error-message {
+  text-align: center;
+  color: crimson;
+  font-weight: bolder;
+}
+
+.output-card {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(194, 218, 154);
+}
+
+.output-card h1 {
+  font-family: cashMoneyFont;
+  font-size: 40px;
+}
+
+.output-card h2 {
+  font-style: italic;
+  font-family: serif;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.conversion-zone {
+  text-align: center;
+  font-family: serif;
+  font-style: italic;
+  display: none;
+}
+
+#arrow-img {
+  height: auto;
+  width: 100%;
 }
