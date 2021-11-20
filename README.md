@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Currency Exchanger_
 
 #### By _**Matt C.**_
 
-#### _{Brief description of application}_
+#### _Let's the user find out exchange rates for every currency recognized by the UN_
 
 ## Technologies Used
 
@@ -12,17 +12,20 @@
 * _JavaScript_
 * _Bootstrap_
 * _jQuery_
-* _jest_
 * _webpack_
+* _[ExchangeRate-API](https://www.exchangerate-api.com/)_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_Choose two currencies out of all 160 and find out the exchange rate between them. Useful for when you're travelling abroad!_
 
 ## Setup/Installation Requirements
 
-* _Run 'git clone git@github:catperso/{PROJECT GOES HERE}.git' from the terminal to clone the project directory to your device._
-* _Run 'npm install' and 'npm run build' from the terminal in the project directory._
+* _Run 'git clone git@github:catperso/currency-exchanger.git' from the terminal to clone the project directory to your device._
+* _Run 'npm install' from the terminal in the project directory._
+* _Create an empty file named **.env** in the project directory._
+* _Sign up for an API key from [ExchangeRate-API](https://app.exchangerate-api.com/sign-up) and follow their instructions to recieve a key._
+* _In the **.env** file add a single line: **API\_KEY:{key}** and replace {key} with your API key._
 * _Run 'npm run start' from the terminal to build the project and start a live server._
 * _Enjoy the lovely CSS._
 
