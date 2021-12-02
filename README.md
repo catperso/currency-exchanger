@@ -21,7 +21,7 @@ _Choose two currencies out of all 160 and find out the exchange rate between the
 
 ## Setup/Installation Requirements
 
-* _Run 'git clone git@github:catperso/currency-exchanger.git' from the terminal to clone the project directory to your device._
+* _Run 'git clone https://github.com/catperso/currency-exchanger' from the terminal to clone the project directory to your device._
 * _Run 'npm install' from the terminal in the project directory._
 * _Create an empty file named **.env** in the project directory._
 * _Sign up for an API key from [ExchangeRate-API](https://app.exchangerate-api.com/sign-up) and follow their instructions to recieve a key._
